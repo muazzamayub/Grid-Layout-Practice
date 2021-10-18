@@ -61,6 +61,7 @@ class MyApp extends StatelessWidget {
         child: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constraints){
             if(constraints.maxWidth < 600.0){
+              //to see different layout according to screen size.
               return gridviewForPhone();
             }else{
               return gridviewForTablet();
